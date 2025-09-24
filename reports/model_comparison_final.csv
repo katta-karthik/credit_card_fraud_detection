@@ -1,3 +1,0 @@
-Model,Accuracy,Precision,Recall,F1 Score,ROC AUC,Net_Benefit
-Sample Model 1,0.95,0.85,0.78,0.81,0.88,2225.0
-Sample Model 2,0.93,0.82,0.8,0.81,0.86,2465.0

@@ -6,18 +6,16 @@ env/
 .env
 .venv
 
-# Data files (often too large for Git)
+# Large data files (keep structure, exclude large files)
 data/raw/*.csv
 data/raw/*.json
 data/raw/*.parquet
 data/external/*.csv
 data/external/*.json
 
-# Model files (binary files, often large)
-models/*.pkl
-models/*.joblib
-models/individual/*.pkl
-models/ensemble/*.pkl
+# Generated model files during notebook execution
+*.pkl
+*.joblib
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -46,22 +44,12 @@ __pycache__/
 ehthumbs.db
 Thumbs.db
 
-# Logs
+# Logs and temporary files
 *.log
-logs/
-
-# Temporary files
 *.tmp
 *.temp
 
-# Results that can be regenerated
-results/*.png
-results/*.jpg
-reports/figures/*.png
-reports/figures/*.jpg
-
-# Keep folder structure but ignore contents
-data/raw/.gitkeep
-data/processed/.gitkeep
-models/individual/.gitkeep
-models/ensemble/.gitkeep
+# Keep folder structure but ignore large generated files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
