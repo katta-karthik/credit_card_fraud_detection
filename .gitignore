@@ -1,0 +1,67 @@
+# Don't track these files/folders in Git
+
+# Virtual Environment
+venv/
+env/
+.env
+.venv
+
+# Data files (often too large for Git)
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.parquet
+data/external/*.csv
+data/external/*.json
+
+# Model files (binary files, often large)
+models/*.pkl
+models/*.joblib
+models/individual/*.pkl
+models/ensemble/*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Results that can be regenerated
+results/*.png
+results/*.jpg
+reports/figures/*.png
+reports/figures/*.jpg
+
+# Keep folder structure but ignore contents
+data/raw/.gitkeep
+data/processed/.gitkeep
+models/individual/.gitkeep
+models/ensemble/.gitkeep
